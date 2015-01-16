@@ -1,6 +1,13 @@
 # Revolving-Css-Animations
 A general guide to make a simple yet fancy design in html/css.
 
+To start:
+git clone 'https://github.com/cdminigun/Revolving-Css-Animations.git'
+
+Then you can view an example after editing your directory strucutre for the link to the css and image. 
+
+From here you can create your own picture, add your own content and play around with the affect. 
+
 Layout: 
 
 First, create an image using your favorite tool that allows for transparency. (I used Gimp.) This will allow you to do a various amount of colors. For instance, in my use case. I utilized a Black (#222) and white theme to create my image as it matched my site layout and design. Feel free to choose the colors that match you website the most.(However, be careful to choose colors close on the color wheel, as you may hit some strange colors utilizing my method (though if you go for scroll effect, you should be able to render whatever color.  
