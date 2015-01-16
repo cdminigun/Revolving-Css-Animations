@@ -1,0 +1,51 @@
+/*   Created by Christopher Doege
+     In CSS we define elements and labels for either tags or custom classes / IDs  
+     
+     The CSS below describes some key portions for our revolving CSS example. 
+
+*/
+
+html {
+	font-size: 20px;
+	background-color: white;
+     } 
+
+.animation {
+		background-color: #222;
+		position:fixed;
+		left:0;
+		top:0;
+		/*  For Chrome, Safari, Opera support   */
+		-webkit-animation-name: revolving;
+		-webkit-animation-duration: 15s; /* Some arbitrary amount of time, depending upon how long you want the transition to last*/
+		-webkit-animation-timing-function: linear;
+		-webkit-aniamtion-delay: 2s; 
+		-webkit-animation-iteration-count: infinite; /* So our revolving css atribute continues to change */ 
+		-webkit-animation-direction: alternate;   /* Alternates so we don't suddently revert back to the original, bypassing the choppy effect for our loop. */
+		-webkit-animation-play-state: running;
+		/* Standard syntax */
+		animation-name: revolving;
+		animation-duration: 15s; /* Some arbitrary amount of time, depending upon how long you want the transition to last */ 
+		animation-timing-function: linear;
+		animation-delay: 2s; 
+		animation-iteration-count: infinite; /* So our revolving css attribute continues to change */
+		animation-direction: alternate;  /* Alternates so we don't suddenly revert back to the original, bypassing the choppy effect for our loop */
+		-webkit-animation-play-state: running;
+		
+           }
+/* Keyframes */
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes revolving {
+				from { background-color: #222;}
+				to   { background-color: white;}
+			     }
+
+/* Standard Syntax */
+@keyframes revolving {
+			from { background-color: #222;}
+			to   { background-color: white;}
+
+		     }
+
